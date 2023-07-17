@@ -1,0 +1,51 @@
+.background-color {
+    background-color: rgb(180, 247, 194) ;
+}
+.maintitle {
+    background-color: rgb(122, 177, 128);
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.title1 {
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.image{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.image1 {
+    padding-left: 250px;
+    margin-bottom: 30px;
+    width: 500px;
+    height: 350px;
+    
+}
+.flont {
+    padding: 10px;
+    text-align: center;
+}
+.footer{
+    background-color: rgb(255, 255, 255);
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+body {
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-image: url("paper.jpg");
+}
+footer{
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
