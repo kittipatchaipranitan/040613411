@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,td,th{
+        border: 1px solid green;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    td{
+        border: 1px solid green;
+        text-align: center;
+    }
+    th{
+        border: 1px solid green;
+        text-align: center;
+    }
+    .a{
+        background-color: #d5e3cf;
+    }
+    .b{
+        background-color: #ebf1e9;
+    }
+    td{
+        padding: 0px 60px 0px 60px;
+    }
+
+    
+</style>
+<body>
+    <form action="form-echo.php">
+        <table cellpadding = "10" cellspacing = "50">
+            <thead>
+                <tr class="b">
+                    <td colspan="1"></td>
+                    <th>ตัวอย่างข้อมูล</th>
+                    <th>Input type?</th>
+            </thead>
+            <tbody>
+                <tr class="a">
+                    <td>1.</td>
+                    <td>ชื่อเต็ม/ชื่อย่อสาขาวิชา</td>
+                    <td><pre>&lt;input type="text" &gt;</pre><input type="text"></td>
+                </tr>
+                <tr class="b">
+                    <td>2.</td>
+                    <td>จำนวนเงินที่จะโอน</td>
+                    <td><pre>&lt;input type="number"&gt;</pre><input type="number"></td>
+                </tr>
+                <tr class="a">
+                    <td>3.</td>
+                    <td>อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย</td>
+                    <td><pre>&lt;input type="radio"&gt;</pre>ข้าวผัด<input type="radio" name="อาหาร">5<input type="radio" name="อาหาร">4<input type="radio" name="อาหาร">3<input type="radio" name="อาหาร">2<input type="radio" name="อาหาร">1
+                        <p>ข้าวกระเพราไก่<input type="radio" name="อาหาร1">5<input type="radio" name="อาหาร1">4<input type="radio" name="อาหาร1">3<input type="radio" name="อาหาร1">2<input type="radio" name="อาหาร1">1</p>
+                        <p>ข้าวกระหมูกระเทียม<input type="radio" name="อาหาร2">5<input type="radio" name="อาหาร2">4<input type="radio" name="อาหาร2">3<input type="radio" name="อาหาร2">2<input type="radio" name="อาหาร2">1</p>
+                        <p>มาม่าหมูสับ<input type="radio" name="อาหาร3">5<input type="radio" name="อาหาร3">4<input type="radio" name="อาหาร3">3<input type="radio" name="อาหาร3">2<input type="radio" name="อาหาร3">1</p>
+                        <p>สุกี้แห้ง<input type="radio" name="อาหาร4">5<input type="radio" name="อาหาร4">4<input type="radio" name="อาหาร4">3<input type="radio" name="อาหาร4">2<input type="radio" name="อาหาร4">1</p>
+                    </td>
+                    
+                </tr>
+                <tr class="b">
+                    <td>4.</td>
+                    <td>ค่าไฟฟ้า 3 เดือนที่ผ่านมา</td>
+                    <td><pre>&lt;input type="number"&gt;</pre><input type="number"></td>
+                </tr>
+                <tr class="a">
+                    <td>5.</td>
+                    <td>รหัสบัครประชาชน</td>
+                    <td><pre>&lt;input type="text"&gt;</pre><input type="text" placeholder="ใส่ตัวเลข13หลัก"></td>
+                </tr>
+                <tr class="b">
+                    <td>6.</td>
+                    <td>ความพึงพอใจของหนังสือเล่มนี้</td>
+                    <td><pre>&lt;input type="radio"&gt;</pre><input type="radio" name="ความพึงพอใจของหนังสือเล่มนี้">5<input type="radio" name="ความพึงพอใจของหนังสือเล่มนี้">4<input type="radio" name="ความพึงพอใจของหนังสือเล่มนี้">3<input type="radio" name="ความพึงพอใจของหนังสือเล่มนี้">2<input type="radio" name="ความพึงพอใจของหนังสือเล่มนี้">1</td>
+                </tr>
+                <tr class="a">
+                    <td>7.</td>
+                    <td>อาการป่วย</td>
+                    <td><pre>&lt;input type="text"&gt;</pre><input type="text"></td>
+                </tr>
+                <tr class="a">
+                    <td>8.</td>
+                    <td>ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่</td>
+                    <td><pre>&lt;input type="radio"&gt;</pre><input type="radio" name="เคยได้รับวัคซีนหรือไม่">เคย <input type="radio" name="เคยได้รับวัคซีนหรือไม่">ไม่เคย</td>
+                </tr>
+                <tr class="a">
+                    <td>9.</td>
+                    <td>รหัสผ่าน</td>
+                    <td><pre>&lt;input type="password"&gt;</pre><input type="password"></td>
+                </tr>
+                <tr class="a">
+                    <td>10.</td>
+                    <td>เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</td>
+                    <td><pre>&lt;input type="time"&gt;</pre>เข้าเรียน <input type="time">
+                    <p>เลิกเรียน <input type="time"></p>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td>11.</td>
+                    <td>วันเวลาที่ต้องไปพบแพทย์</td>
+                    <td><pre>&lt;input type="date"&gt;</pre><input type="date"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    
+</body>
+</html>
