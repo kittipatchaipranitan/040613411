@@ -1,0 +1,13 @@
+.yellow-bg{
+    text-decoration: underline;
+    background-color: yellow;
+}
+.gray-bg{
+    text-decoration: underline;
+    background-color: rgb(152, 154, 155);
+}
+[id=year]{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
