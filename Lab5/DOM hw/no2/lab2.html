@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function changecolor(id){
+        let change = document.getElementById(id);
+        if(change.value){
+            change.style.color = 'green'
+        }else{
+            change.style.color = ''
+        }
+
+
+    }
+</script>
+<body>
+    Name : <input type="text" id="name" onblur="changecolor('name')"><br>
+    Age : <input type="text" id="age" onblur="changecolor('age')"><br>
+    Birthdate : <input type="text" id="birthdate" onblur="changecolor('birthdate')"><br>
+</body>
+</html>

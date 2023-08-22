@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function addnum(){
+        let Int1 = document.getElementById("number1").value;
+        let Int2 = document.getElementById("number2").value;
+        let Int3 = parseInt(Int1)+parseInt(Int2);
+        document.getElementById("result").value=Int3;
+    }
+    window.onload = function(){
+        let button = document.getElementById("button")
+        button.onclick = addnum;
+    }
+</script>
+<body>
+    <input type="text" id="number1">
+    + <input type="text" id="number2">
+    = <input type="text" id="result">
+    <input type="button" id="button" value="Go Go" onclick="addnum">
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function addnum(){
+        let Int1 = document.getElementById('num1').value;
+        let Int2 = document.getElementById('num2').value;
+        let index = document.getElementById('option');
+        let C;
+        let B = index.options[index.selectedIndex].value
+        console.log(B)
+        if(B==0){
+            C = parseInt(Int1)+parseInt(Int2)
+            document.getElementById('result').value=C;
+        }
+        else if(B==1){
+            C = parseInt(Int1)-parseInt(Int2)
+            document.getElementById('result').value=C;
+        }
+        else if(B==2){
+            C = parseInt(Int1)*parseInt(Int2)
+            document.getElementById('result').value=C;
+        }
+        else if(B==3){
+            C = parseInt(Int1)/parseInt(Int2);
+            document.getElementById('result').value=C;
+        }
+    }
+    
+    window.onload = function(){
+        let button1 = document.getElementById('button1');
+        button.onclick = addnum;
+    }
+</script>
+<body>
+    <input type="text" id="num1">
+    <select id="option">
+        <option value="0">+</option>
+        <option value="1">-</option>
+        <option value="2">*</option>
+        <option value="3">/</option>
+    </select>
+    <input type="text" id="num2">
+    = <input type="text" id="result">
+    <input type="button" id="button1" value="Compute" onclick="addnum()">
+</body>
+</html>

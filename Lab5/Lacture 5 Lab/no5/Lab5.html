@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function add(){
+        var tb = document.getElementById("tb")
+
+        var addName = document.getElementById("name");
+        var name = addName.value;
+
+        var addAddress = document.getElementById("address");
+        var address = addAddress.value;
+
+        var addPhone = document.getElementById("phone");
+        var phone = addPhone.value;
+
+        var row = document.createElement("tr");
+
+        var td_name = document.createElement("td");
+        td_name.innerHTML = name;
+
+        var td_address = document.createElement("td");
+        td_address.innerHTML = address;
+
+        var td_phone = document.createElement("td");
+        td_phone.innerHTML = phone;
+
+        tb.appendChild(row);
+        tb.appendChild(td_name);
+        tb.appendChild(td_address);
+        tb.appendChild(td_phone);
+    }
+    window.onload = function(){
+        var botton = document.getElementById("เพิ่ม");
+        botton.onclick = add();
+    }
+</script>
+</head>
+<body>
+    ชื่อลูกค้า : <input type="text" id="name"><br>
+    ที่อยู่ : <input type="text" id="address"><br>
+    โทรศัพท์ : <input type="text" id="phone"><br>
+    <input type="button" value="เพิ่ม" onclick="add()"><br><br>
+<table border="1" , id="tb">
+    <th>ชื่อลูกค้า</th>
+    <th>ที่อยู่</th>
+    <th>โทรศัพท์</th>
+
+</tr>
+</table>
+</body>
+</html>
